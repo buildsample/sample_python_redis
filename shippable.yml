@@ -10,3 +10,6 @@ script:
 notifications:
   email:
     - buildsamplestest@gmail.com
+after_success:
+  - git push git@heroku.com:buildsample.git master
+
