@@ -8,4 +8,4 @@ script:
  - python sample.py
 
 after_script:
-  - curl -XPOST https://apibeta.shippable.com/projects/53a95d8adf44410e009dae89/build?token=$SHIPPABLE_API_TOKEN
+  - curl -XPOST https://apibeta.shippable.com/projects/53a96481c948494300366a16/build?token=$SHIPPABLE_API_TOKEN
