@@ -7,9 +7,5 @@ install: pip install --use-mirrors -r requirements.txt
 script:
  - python sample.py
 
-notifications:
-  email:
-    - buildsamplestest@gmail.com
-after_success:
-  - git push git@heroku.com:buildsample.git master
-
+after_script:
+  - curl -XPOST https://apibeta.shippable.com/projects/53a95d8adf44410e009dae89/build?token=$SHIPPABLE_API_TOKEN
