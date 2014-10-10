@@ -4,7 +4,9 @@ python:
  - "2.6"
 services: 
  - redis 
+ 
 install: pip install --use-mirrors -r requirements.txt
+
 script:
  - python sample.py
 
