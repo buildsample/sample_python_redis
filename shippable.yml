@@ -10,10 +10,13 @@ services:
  
 install: pip install --use-mirrors -r requirements.txt
 
+
 build_image: shippable/minv2:beta
 
 script:
  - python sample.py
+
+
 
 #after_script:
  # - curl -XPOST https://apibeta.shippable.com/projects/53a95d89df44410e009dae87/build?token=$SHIPPABLE_API_TOKEN
