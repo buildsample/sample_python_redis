@@ -10,7 +10,6 @@ services:
  
 install: pip install --use-mirrors -r requirements.txt
 
-
 #build_image: shippable/minv2:beta
 
 script:
