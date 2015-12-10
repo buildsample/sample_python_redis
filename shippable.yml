@@ -6,14 +6,14 @@ python:
 services: 
  - redis 
  
-install: pip install --use-mirrors -r requirements.txt
+install: pip install -r requirements.txt
 
 #build_image: shippable/minv2:beta
 
 script:
  - python sample.py
 
-
+build_image: drydock/u14pytpls:prod
 
 
 #after_script:
