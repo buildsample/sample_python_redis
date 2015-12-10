@@ -6,7 +6,7 @@ python:
 services: 
  - redis 
  
-install: pip install --use-mirrors -r requirements.txt
+install: pip install -r requirements.txt
 
 #build_image: shippable/minv2:beta
 
