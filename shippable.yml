@@ -13,7 +13,7 @@ install: pip install -r requirements.txt
 script:
  - python sample.py
 
-build_image: drydock/u12pytpls:tip
+build_image: drydock/u14pytpls:tip
 
 archive: true
 #after_script:
